@@ -40,7 +40,6 @@ class Empresa:
     def insertar(self):
         nueva_empresa = (self.txt_ruc.get(), self.txt_razon.get(), self.txt_direccion.get())
         self.tree.insert('', END, values=nueva_empresa)
-        # Opcional: limpiar campos después de insertar
         self.txt_ruc.delete(0, END)
         self.txt_razon.delete(0, END)
         self.txt_direccion.delete(0, END)
